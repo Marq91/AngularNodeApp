@@ -51,7 +51,7 @@ app.post('/login', async(req, res) => {
 })
 
 //Si recibimos mensaje q comienza con:'(node:16784) DeprecationWarning:...is deprecated' sedebe agregar otro parametro
-mongoose.connect('mongodb://test:test123456@ds261302.mlab.com:61302/pssocial',  { useNewUrlParser: true } , (err) => {
+mongoose.connect('[STRING_CONNECTION_MLAB_TEST_URL]',  { useNewUrlParser: true } , (err) => {
     if(!err)
         console.log('connected to mongo!')
 })
